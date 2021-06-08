@@ -1,0 +1,58 @@
+<div>
+    <div class="profile">
+
+        <img 
+            src="{{ section.settings.user_img | img_url: '300x300' }}" 
+            alt="" 
+            srcset=""
+        >
+
+        <h3>
+            {{ section.settings.user_name }}
+        </h3>
+
+        <p>
+            {{ section.settings.user_bio }}
+        </p>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Profile",
+    "settings": [
+        {
+            "id": "header",
+            "type": "text",
+            "label": "Profile Settings"
+        },
+        {
+            "id": "user_img",
+            "type": "image_picker",
+            "label": "User Photo"
+        },
+        {
+            "id": "user_name",
+            "type": "text",
+            "label": "User Name"
+        },
+        {
+            "id": "user_bio",
+            "type": "richtext",
+            "label": "User Bio"
+        }
+    ],
+    "presets": [
+        {
+            "category": {
+                "en": "Demo 1",
+                "vi": "Demo 1"
+            },
+            "name": {
+                "en": "Demo 2",
+                "vi": "Demo 2"
+            }
+        }
+    ]
+}
+{% endschema %}
