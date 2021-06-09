@@ -1,3 +1,5 @@
 node_modules
 config.yml
-config.yml
+assets/app.js
+assets/app.css
+assets/mix-manifest.json
