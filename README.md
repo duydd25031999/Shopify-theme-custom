@@ -64,6 +64,14 @@ Cross-platform command line tool to build Shopify themes
 theme watch --allow-live
 ```
 
+## Create new theme
+
+cmd
+```command
+theme new --password=[your-password] --store=[your-store.myshopify.com] --name=[your-theme-name]
+theme new --password=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 --store=duy-michael.myshopify.com --name="duy-michael-1"
+```
+
 # Liquid
 Liquid is an open-source template language created by Shopify and written in Ruby.
 
